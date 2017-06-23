@@ -1,13 +1,13 @@
 #!/usr/bin/env ruby
 
-# file: geolocate.rb
+# file: glw.rb
 
 
 require 'geocoder'
 require 'geodesic'
 
 
-class Geolocate
+class Glw
 
   def initialize()
     Geocoder.configure(:timeout => 3)
@@ -38,7 +38,7 @@ end
 
 if __FILE__ == $0 then
 
-  gl = Geolocate.new
-  puts gl.locate(*ARGV).inspect
+  glw = Glw.new
+  puts glw.locate(*ARGV).inspect
 
 end
