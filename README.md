@@ -3,7 +3,7 @@
     require 'glw'
 
     glw = Glw.new
-    r3 = glw.locate 55.94918833, -3.14699833
+    r3 = glw.locate 55.91918833, -3.17699833
 
 The Glw gem uses Google's geolocation API service via the the Geocoder gem. 
 
