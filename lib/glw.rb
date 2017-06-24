@@ -8,6 +8,7 @@ require 'geodesic'
 require 'recordx_sqlite'
 
 
+
 class Glw
 
   def initialize(dbfile='glw.db')
@@ -38,7 +39,7 @@ class Glw
        street_number types)
 
     h = fields.inject({}) {|hash, x| hash.merge(x => loc.method(x).call) }
-    h.merge({relative_distance: d, relative_bearing: b})
+    OpenStruct.new h.merge({relative_distance: d, relative_bearing: b}).freeze
 
   end
   

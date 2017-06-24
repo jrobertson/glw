@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'glw'
-  s.version = '0.2.0'
+  s.version = '0.2.1'
   s.summary = 'A wrapper for the geocoder gem to return the place name ' + 
       'and more for a given longitude and latitude. #gps #geolocation'
   s.authors = ['James Robertson']
