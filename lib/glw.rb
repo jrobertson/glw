@@ -11,9 +11,9 @@ require 'recordx_sqlite'
 
 class Glw
 
-  def initialize(dbfile='glw.db')
+  def initialize(dbfile='glw.db', timeout: 3)
     
-    Geocoder.configure(:timeout => 3)
+    Geocoder.configure(:timeout => timeout)
     
     @coordinates = RecordxSqlite.new(dbfile, 
       table: {coordinates: {coordinates: '', place_id: ''}})
